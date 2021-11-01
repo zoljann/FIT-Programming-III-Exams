@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace XOXO
 {
-    public partial class Form1 : Form
+    public partial class XOXO : Form
     {
-        public Form1()
+        public XOXO()
         {
             InitializeComponent();
         }
@@ -30,12 +30,12 @@ namespace XOXO
                         dugme.Text = "O";
                     Brojac++;
                     if (KrajIgre())
-                        StatusDugmica(false);
+                        SetDugme(false);
                 }
             }
             
         }
-        private void StatusDugmica(bool enabled, bool resetText = false, bool resetColor=false)
+        private void SetDugme(bool statusDugme, bool resetText = false, bool resetColor=false)
         {
             foreach(var kontrola in this.Controls)
             {
@@ -44,7 +44,7 @@ namespace XOXO
                     var dugme = kontrola as Button;
                     if(dugme!= button10)
                     {
-                        dugme.Enabled = enabled;
+                        dugme.Enabled = statusDugme;
                         dugme.Text = resetText ? "" : dugme.Text;
                         if (resetColor)
                         {
@@ -65,7 +65,7 @@ namespace XOXO
             {
                 if (button1.Text == button2.Text && button1.Text == button3.Text)
                 {
-                    button1.BackColor = button2.BackColor = button3.BackColor = Color.Blue;
+                    button1.BackColor = button2.BackColor = button3.BackColor = Color.Maroon;
                     return true;
                 }
             }
@@ -135,7 +135,7 @@ namespace XOXO
 
         private void button10_Click(object sender, EventArgs e)
         {
-            StatusDugmica(true, true, true);
+            SetDugme(true, true, true);
         }
     }
 }

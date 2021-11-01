@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zolja\\Desktop\\FIT-Programming-III-Exams\\XOXO\\XOXO\\XOXO.csproj": {}
+    "C:\\Users\\zolja\\Desktop\\FIT-Programming-III-Exams\\XOXO - Game\\XOXO\\XOXO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zolja\\Desktop\\FIT-Programming-III-Exams\\XOXO\\XOXO\\XOXO.csproj": {
+    "C:\\Users\\zolja\\Desktop\\FIT-Programming-III-Exams\\XOXO - Game\\XOXO\\XOXO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zolja\\Desktop\\FIT-Programming-III-Exams\\XOXO\\XOXO\\XOXO.csproj",
+        "projectUniqueName": "C:\\Users\\zolja\\Desktop\\FIT-Programming-III-Exams\\XOXO - Game\\XOXO\\XOXO.csproj",
         "projectName": "XOXO",
-        "projectPath": "C:\\Users\\zolja\\Desktop\\FIT-Programming-III-Exams\\XOXO\\XOXO\\XOXO.csproj",
+        "projectPath": "C:\\Users\\zolja\\Desktop\\FIT-Programming-III-Exams\\XOXO - Game\\XOXO\\XOXO.csproj",
         "packagesPath": "C:\\Users\\zolja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zolja\\Desktop\\FIT-Programming-III-Exams\\XOXO\\XOXO\\obj\\",
+        "outputPath": "C:\\Users\\zolja\\Desktop\\FIT-Programming-III-Exams\\XOXO - Game\\XOXO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

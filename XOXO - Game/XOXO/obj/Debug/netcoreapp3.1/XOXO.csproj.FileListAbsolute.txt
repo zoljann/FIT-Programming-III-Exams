@@ -13,3 +13,18 @@ C:\Users\zolja\source\repos\XOXO\XOXO\bin\Debug\netcoreapp3.1\XOXO.pdb
 C:\Users\zolja\source\repos\XOXO\XOXO\obj\Debug\netcoreapp3.1\XOXO.dll
 C:\Users\zolja\source\repos\XOXO\XOXO\obj\Debug\netcoreapp3.1\XOXO.pdb
 C:\Users\zolja\source\repos\XOXO\XOXO\obj\Debug\netcoreapp3.1\XOXO.genruntimeconfig.cache
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\XOXO - Game\XOXO\bin\Debug\netcoreapp3.1\XOXO.exe
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\XOXO - Game\XOXO\bin\Debug\netcoreapp3.1\XOXO.deps.json
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\XOXO - Game\XOXO\bin\Debug\netcoreapp3.1\XOXO.runtimeconfig.json
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\XOXO - Game\XOXO\bin\Debug\netcoreapp3.1\XOXO.runtimeconfig.dev.json
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\XOXO - Game\XOXO\bin\Debug\netcoreapp3.1\XOXO.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\XOXO - Game\XOXO\bin\Debug\netcoreapp3.1\XOXO.pdb
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\XOXO - Game\XOXO\obj\Debug\netcoreapp3.1\XOXO.csprojAssemblyReference.cache
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\XOXO - Game\XOXO\obj\Debug\netcoreapp3.1\XOXO.csproj.GenerateResource.cache
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\XOXO - Game\XOXO\obj\Debug\netcoreapp3.1\XOXO.AssemblyInfoInputs.cache
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\XOXO - Game\XOXO\obj\Debug\netcoreapp3.1\XOXO.AssemblyInfo.cs
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\XOXO - Game\XOXO\obj\Debug\netcoreapp3.1\XOXO.csproj.CoreCompileInputs.cache
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\XOXO - Game\XOXO\obj\Debug\netcoreapp3.1\XOXO.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\XOXO - Game\XOXO\obj\Debug\netcoreapp3.1\XOXO.pdb
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\XOXO - Game\XOXO\obj\Debug\netcoreapp3.1\XOXO.genruntimeconfig.cache
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\XOXO - Game\XOXO\obj\Debug\netcoreapp3.1\XOXO.XOXO.resources
