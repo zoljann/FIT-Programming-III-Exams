@@ -63,7 +63,7 @@ namespace Calculator
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(1, 297);
+            this.button1.Location = new System.Drawing.Point(1, 265);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button1.Size = new System.Drawing.Size(80, 50);
@@ -72,8 +72,8 @@ namespace Calculator
             // 
             // btnZero
             // 
-            this.btnZero.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnZero.Location = new System.Drawing.Point(78, 297);
+            this.btnZero.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnZero.Location = new System.Drawing.Point(78, 265);
             this.btnZero.Name = "btnZero";
             this.btnZero.Size = new System.Drawing.Size(80, 50);
             this.btnZero.TabIndex = 1;
@@ -83,8 +83,8 @@ namespace Calculator
             // 
             // btnPoint
             // 
-            this.btnPoint.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnPoint.Location = new System.Drawing.Point(155, 297);
+            this.btnPoint.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPoint.Location = new System.Drawing.Point(155, 265);
             this.btnPoint.Name = "btnPoint";
             this.btnPoint.Size = new System.Drawing.Size(80, 50);
             this.btnPoint.TabIndex = 2;
@@ -94,30 +94,32 @@ namespace Calculator
             // 
             // btnJednako
             // 
-            this.btnJednako.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnJednako.Location = new System.Drawing.Point(232, 297);
+            this.btnJednako.BackColor = System.Drawing.Color.Silver;
+            this.btnJednako.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnJednako.Location = new System.Drawing.Point(232, 265);
             this.btnJednako.Name = "btnJednako";
             this.btnJednako.Size = new System.Drawing.Size(80, 50);
             this.btnJednako.TabIndex = 3;
             this.btnJednako.Text = "=";
-            this.btnJednako.UseVisualStyleBackColor = true;
+            this.btnJednako.UseVisualStyleBackColor = false;
             this.btnJednako.Click += new System.EventHandler(this.btnJednako_Click);
             // 
             // btnSabiranje
             // 
-            this.btnSabiranje.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSabiranje.Location = new System.Drawing.Point(232, 250);
+            this.btnSabiranje.BackColor = System.Drawing.Color.Silver;
+            this.btnSabiranje.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSabiranje.Location = new System.Drawing.Point(232, 218);
             this.btnSabiranje.Name = "btnSabiranje";
             this.btnSabiranje.Size = new System.Drawing.Size(80, 50);
             this.btnSabiranje.TabIndex = 7;
             this.btnSabiranje.Text = "+";
-            this.btnSabiranje.UseVisualStyleBackColor = true;
+            this.btnSabiranje.UseVisualStyleBackColor = false;
             this.btnSabiranje.Click += new System.EventHandler(this.btnSabiranje_Click);
             // 
             // btnThree
             // 
-            this.btnThree.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnThree.Location = new System.Drawing.Point(155, 250);
+            this.btnThree.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnThree.Location = new System.Drawing.Point(155, 218);
             this.btnThree.Name = "btnThree";
             this.btnThree.Size = new System.Drawing.Size(80, 50);
             this.btnThree.TabIndex = 6;
@@ -127,8 +129,8 @@ namespace Calculator
             // 
             // btnTwo
             // 
-            this.btnTwo.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTwo.Location = new System.Drawing.Point(78, 250);
+            this.btnTwo.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnTwo.Location = new System.Drawing.Point(78, 218);
             this.btnTwo.Name = "btnTwo";
             this.btnTwo.Size = new System.Drawing.Size(80, 50);
             this.btnTwo.TabIndex = 5;
@@ -138,8 +140,8 @@ namespace Calculator
             // 
             // button8
             // 
-            this.button8.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button8.Location = new System.Drawing.Point(1, 250);
+            this.button8.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button8.Location = new System.Drawing.Point(1, 218);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(80, 50);
             this.button8.TabIndex = 4;
@@ -149,19 +151,20 @@ namespace Calculator
             // 
             // btnOduzimanje
             // 
-            this.btnOduzimanje.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnOduzimanje.Location = new System.Drawing.Point(232, 204);
+            this.btnOduzimanje.BackColor = System.Drawing.Color.Silver;
+            this.btnOduzimanje.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnOduzimanje.Location = new System.Drawing.Point(232, 172);
             this.btnOduzimanje.Name = "btnOduzimanje";
             this.btnOduzimanje.Size = new System.Drawing.Size(80, 50);
             this.btnOduzimanje.TabIndex = 11;
             this.btnOduzimanje.Text = "-";
-            this.btnOduzimanje.UseVisualStyleBackColor = true;
+            this.btnOduzimanje.UseVisualStyleBackColor = false;
             this.btnOduzimanje.Click += new System.EventHandler(this.btnOduzimanje_Click);
             // 
             // btnSix
             // 
-            this.btnSix.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSix.Location = new System.Drawing.Point(155, 204);
+            this.btnSix.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSix.Location = new System.Drawing.Point(155, 172);
             this.btnSix.Name = "btnSix";
             this.btnSix.Size = new System.Drawing.Size(80, 50);
             this.btnSix.TabIndex = 10;
@@ -171,8 +174,8 @@ namespace Calculator
             // 
             // btnFive
             // 
-            this.btnFive.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnFive.Location = new System.Drawing.Point(78, 204);
+            this.btnFive.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnFive.Location = new System.Drawing.Point(78, 172);
             this.btnFive.Name = "btnFive";
             this.btnFive.Size = new System.Drawing.Size(80, 50);
             this.btnFive.TabIndex = 9;
@@ -182,8 +185,8 @@ namespace Calculator
             // 
             // btnFour
             // 
-            this.btnFour.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnFour.Location = new System.Drawing.Point(1, 204);
+            this.btnFour.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnFour.Location = new System.Drawing.Point(1, 172);
             this.btnFour.Name = "btnFour";
             this.btnFour.Size = new System.Drawing.Size(80, 50);
             this.btnFour.TabIndex = 8;
@@ -193,19 +196,20 @@ namespace Calculator
             // 
             // btnMnozenje
             // 
-            this.btnMnozenje.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnMnozenje.Location = new System.Drawing.Point(232, 158);
+            this.btnMnozenje.BackColor = System.Drawing.Color.Silver;
+            this.btnMnozenje.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMnozenje.Location = new System.Drawing.Point(232, 126);
             this.btnMnozenje.Name = "btnMnozenje";
             this.btnMnozenje.Size = new System.Drawing.Size(80, 50);
             this.btnMnozenje.TabIndex = 15;
             this.btnMnozenje.Text = "X";
-            this.btnMnozenje.UseVisualStyleBackColor = true;
+            this.btnMnozenje.UseVisualStyleBackColor = false;
             this.btnMnozenje.Click += new System.EventHandler(this.btnMnozenje_Click);
             // 
             // btnNine
             // 
-            this.btnNine.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnNine.Location = new System.Drawing.Point(155, 158);
+            this.btnNine.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnNine.Location = new System.Drawing.Point(155, 126);
             this.btnNine.Name = "btnNine";
             this.btnNine.Size = new System.Drawing.Size(80, 50);
             this.btnNine.TabIndex = 14;
@@ -215,8 +219,8 @@ namespace Calculator
             // 
             // btnEight
             // 
-            this.btnEight.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEight.Location = new System.Drawing.Point(78, 158);
+            this.btnEight.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEight.Location = new System.Drawing.Point(78, 126);
             this.btnEight.Name = "btnEight";
             this.btnEight.Size = new System.Drawing.Size(80, 50);
             this.btnEight.TabIndex = 13;
@@ -226,8 +230,8 @@ namespace Calculator
             // 
             // btnSeven
             // 
-            this.btnSeven.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSeven.Location = new System.Drawing.Point(1, 158);
+            this.btnSeven.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSeven.Location = new System.Drawing.Point(1, 126);
             this.btnSeven.Name = "btnSeven";
             this.btnSeven.Size = new System.Drawing.Size(80, 50);
             this.btnSeven.TabIndex = 12;
@@ -237,50 +241,52 @@ namespace Calculator
             // 
             // btnDjeljenje
             // 
-            this.btnDjeljenje.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDjeljenje.Location = new System.Drawing.Point(232, 111);
+            this.btnDjeljenje.BackColor = System.Drawing.Color.Silver;
+            this.btnDjeljenje.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDjeljenje.Location = new System.Drawing.Point(232, 79);
             this.btnDjeljenje.Name = "btnDjeljenje";
             this.btnDjeljenje.Size = new System.Drawing.Size(80, 50);
             this.btnDjeljenje.TabIndex = 19;
             this.btnDjeljenje.Text = "/";
-            this.btnDjeljenje.UseVisualStyleBackColor = true;
+            this.btnDjeljenje.UseVisualStyleBackColor = false;
             this.btnDjeljenje.Click += new System.EventHandler(this.btnDjeljenje_Click);
             // 
             // btnC
             // 
-            this.btnC.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnC.Location = new System.Drawing.Point(155, 111);
+            this.btnC.BackColor = System.Drawing.Color.Silver;
+            this.btnC.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnC.Location = new System.Drawing.Point(155, 79);
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(80, 50);
             this.btnC.TabIndex = 18;
             this.btnC.Text = "C";
-            this.btnC.UseVisualStyleBackColor = true;
+            this.btnC.UseVisualStyleBackColor = false;
             this.btnC.Click += new System.EventHandler(this.btnC_Click);
             // 
             // btnCE
             // 
-            this.btnCE.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCE.Location = new System.Drawing.Point(78, 111);
+            this.btnCE.BackColor = System.Drawing.Color.Silver;
+            this.btnCE.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCE.Location = new System.Drawing.Point(78, 79);
             this.btnCE.Name = "btnCE";
             this.btnCE.Size = new System.Drawing.Size(80, 50);
             this.btnCE.TabIndex = 17;
-            this.btnCE.Text = "CE";
-            this.btnCE.UseVisualStyleBackColor = true;
+            this.btnCE.UseVisualStyleBackColor = false;
             // 
             // btnPostotak
             // 
-            this.btnPostotak.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnPostotak.Location = new System.Drawing.Point(1, 111);
+            this.btnPostotak.BackColor = System.Drawing.Color.Silver;
+            this.btnPostotak.Font = new System.Drawing.Font("Verdana", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPostotak.Location = new System.Drawing.Point(1, 79);
             this.btnPostotak.Name = "btnPostotak";
             this.btnPostotak.Size = new System.Drawing.Size(80, 50);
             this.btnPostotak.TabIndex = 16;
-            this.btnPostotak.Text = "%";
-            this.btnPostotak.UseVisualStyleBackColor = true;
+            this.btnPostotak.UseVisualStyleBackColor = false;
             // 
             // txtBox1
             // 
             this.txtBox1.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtBox1.Location = new System.Drawing.Point(1, 12);
+            this.txtBox1.Location = new System.Drawing.Point(1, 1);
             this.txtBox1.Name = "txtBox1";
             this.txtBox1.Size = new System.Drawing.Size(311, 78);
             this.txtBox1.TabIndex = 20;
@@ -290,7 +296,7 @@ namespace Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(310, 344);
+            this.ClientSize = new System.Drawing.Size(313, 314);
             this.Controls.Add(this.txtBox1);
             this.Controls.Add(this.btnDjeljenje);
             this.Controls.Add(this.btnC);
