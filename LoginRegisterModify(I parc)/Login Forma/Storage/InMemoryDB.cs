@@ -24,6 +24,28 @@ namespace Login_Forma.Storage
                 BrojIndeksa = "IB200002",
                 DatumRodjenja = DateTime.Now,
                 GodinaStudija = 2,
+                },
+                 new Student()
+                {
+                ID= 2,
+                Ime = "Inas",
+                Prezime = "Bajrektarevic",
+                KorisnickoIme= "inas.bajrektarevic",
+                Lozinka = "inas123",
+                BrojIndeksa = "IB200007",
+                DatumRodjenja = DateTime.Now,
+                GodinaStudija = 2,
+                },
+                  new Student()
+                {
+                ID= 3,
+                Ime = "Ali",
+                Prezime = "Kajan",
+                KorisnickoIme= "ali.kajan",
+                Lozinka = "ali123",
+                BrojIndeksa = "IB2000055",
+                DatumRodjenja = DateTime.Now,
+                GodinaStudija = 3,
                 }
             };
         }

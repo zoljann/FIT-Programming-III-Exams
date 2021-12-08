@@ -24,7 +24,7 @@ namespace Login_Forma
             UcitajStudente();
         }
 
-        private void UcitajStudente(List<Student> podaci = null)
+        public void UcitajStudente(List<Student> podaci = null)
         {
             dataGridView1.DataSource = null; //refresh
             dataGridView1.DataSource = podaci?? InMemoryDB.studenti;
@@ -35,7 +35,7 @@ namespace Login_Forma
         {
             var student = dataGridView1.SelectedRows[0].DataBoundItem as Student;  //vraca objekat toga reda i mi ga pohranjujemo u student
             var modifikuj = new Modifikacija(student);
-            if (modifikuj.ShowDialog() == DialogResult.OK) //moglo je samo modifikuj.ShowDialog()
+            if (modifikuj.ShowDialog() == DialogResult.OK) //provjeravamo da li je dialog prosao OK, ako jeste ucitava studente
                 UcitajStudente();
                 
         }

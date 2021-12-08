@@ -45,9 +45,10 @@ namespace Login_Forma
                 student.BrojIndeksa = brojIndeksaBox.Text;
                 student.GodinaStudija = comboBox1.SelectedIndex+1;
                 student.SlikaStudenta = pictureBox1.Image;
-
-            MessageBox.Show(Poruke.UspjesnoEditovan);
+                MessageBox.Show(Poruke.UspjesnoEditovan);
+                this.DialogResult = DialogResult.OK; //vraca dialog result kao OK da bi se kasnije refreshovalo nakon modifikacije
                 Close();
+            
             }
 
         private void button1_Click(object sender, EventArgs e)
