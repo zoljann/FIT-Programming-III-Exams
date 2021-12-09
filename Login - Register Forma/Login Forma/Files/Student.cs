@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Login_Forma.Files;
 namespace Login_Forma
 {
     public class Student
@@ -18,5 +18,7 @@ namespace Login_Forma
         public string BrojIndeksa { get; set; }
         public DateTime DatumRodjenja { get; set; }
         public int GodinaStudija { get; set; }
+        public List<Predmet> StudentPredmeti = new List<Predmet>();
+            
     }
 }

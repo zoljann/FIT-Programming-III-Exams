@@ -30,7 +30,6 @@ namespace Login_Forma
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prezime = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,7 +39,19 @@ namespace Login_Forma
             this.Slika = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GodinaStudija = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DatumRodjenja = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dgvStudentPredmeti = new System.Windows.Forms.DataGridView();
+            this.dgvPredmeti = new System.Windows.Forms.DataGridView();
+            this.Naziv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gStudija = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Predmet = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gstud = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudentPredmeti)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPredmeti)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -64,15 +75,8 @@ namespace Login_Forma
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(744, 237);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(744, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStudenti_CellClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStudenti_CellDoubleClick);
             // 
             // ID
             // 
@@ -151,11 +155,98 @@ namespace Login_Forma
             this.DatumRodjenja.Name = "DatumRodjenja";
             this.DatumRodjenja.ReadOnly = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 15);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(744, 20);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(659, 285);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Dodaj predmet";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnDodajPredmet);
+            // 
+            // dgvStudentPredmeti
+            // 
+            this.dgvStudentPredmeti.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStudentPredmeti.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Predmet,
+            this.gstud});
+            this.dgvStudentPredmeti.Location = new System.Drawing.Point(12, 311);
+            this.dgvStudentPredmeti.Name = "dgvStudentPredmeti";
+            this.dgvStudentPredmeti.Size = new System.Drawing.Size(247, 234);
+            this.dgvStudentPredmeti.TabIndex = 3;
+            // 
+            // dgvPredmeti
+            // 
+            this.dgvPredmeti.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPredmeti.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Naziv,
+            this.gStudija});
+            this.dgvPredmeti.Location = new System.Drawing.Point(488, 311);
+            this.dgvPredmeti.Name = "dgvPredmeti";
+            this.dgvPredmeti.Size = new System.Drawing.Size(246, 237);
+            this.dgvPredmeti.TabIndex = 4;
+            // 
+            // Naziv
+            // 
+            this.Naziv.DataPropertyName = "Naziv";
+            this.Naziv.HeaderText = "Naziv";
+            this.Naziv.Name = "Naziv";
+            // 
+            // gStudija
+            // 
+            this.gStudija.DataPropertyName = "GodinaStudija";
+            this.gStudija.HeaderText = "Godina studija";
+            this.gStudija.Name = "gStudija";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 295);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(128, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Predmeti koje student vidi";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(487, 295);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(163, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Svi predmeti koji se nalaze u bazi";
+            // 
+            // Predmet
+            // 
+            this.Predmet.DataPropertyName = "Naziv";
+            this.Predmet.HeaderText = "Naziv";
+            this.Predmet.Name = "Predmet";
+            // 
+            // gstud
+            // 
+            this.gstud.DataPropertyName = "GodinaStudija";
+            this.gstud.HeaderText = "Godina studija";
+            this.gstud.Name = "gstud";
+            // 
             // BazaPodataka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(768, 290);
+            this.ClientSize = new System.Drawing.Size(768, 555);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dgvPredmeti);
+            this.Controls.Add(this.dgvStudentPredmeti);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "BazaPodataka";
@@ -163,6 +254,8 @@ namespace Login_Forma
             this.Text = "BazaPodataka";
             this.Load += new System.EventHandler(this.BazaPodataka_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudentPredmeti)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPredmeti)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,5 +274,14 @@ namespace Login_Forma
         private System.Windows.Forms.DataGridViewTextBoxColumn Slika;
         private System.Windows.Forms.DataGridViewTextBoxColumn GodinaStudija;
         private System.Windows.Forms.DataGridViewTextBoxColumn DatumRodjenja;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dgvStudentPredmeti;
+        private System.Windows.Forms.DataGridView dgvPredmeti;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Naziv;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gStudija;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Predmet;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gstud;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
