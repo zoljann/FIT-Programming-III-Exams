@@ -31,15 +31,15 @@ namespace Login_Forma
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.DatumRodjenja = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GodinaStudija = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Slika = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lozinka = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KorisnickoIme = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BrojIndeksa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Prezime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Prezime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BrojIndeksa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KorisnickoIme = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lozinka = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Slika = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GodinaStudija = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DatumRodjenja = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,45 +74,32 @@ namespace Login_Forma
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // DatumRodjenja
+            // ID
             // 
-            this.DatumRodjenja.DataPropertyName = "DatumRodjenja";
-            this.DatumRodjenja.HeaderText = "DatumRodjenja";
-            this.DatumRodjenja.Name = "DatumRodjenja";
-            this.DatumRodjenja.ReadOnly = true;
+            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.ID.DataPropertyName = "ID";
+            this.ID.FillWeight = 5F;
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Width = 30;
             // 
-            // GodinaStudija
+            // Ime
             // 
-            this.GodinaStudija.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.GodinaStudija.DataPropertyName = "GodinaStudija";
-            this.GodinaStudija.HeaderText = "Godina Studija";
-            this.GodinaStudija.Name = "GodinaStudija";
-            this.GodinaStudija.ReadOnly = true;
-            this.GodinaStudija.Width = 101;
+            this.Ime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Ime.DataPropertyName = "Ime";
+            this.Ime.HeaderText = "Ime";
+            this.Ime.Name = "Ime";
+            this.Ime.ReadOnly = true;
             // 
-            // Slika
+            // Prezime
             // 
-            this.Slika.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Slika.DataPropertyName = "SlikaStudenta";
-            this.Slika.HeaderText = "Slika";
-            this.Slika.Name = "Slika";
-            this.Slika.ReadOnly = true;
-            this.Slika.Width = 55;
-            // 
-            // Lozinka
-            // 
-            this.Lozinka.DataPropertyName = "Lozinka";
-            this.Lozinka.HeaderText = "Lozinka";
-            this.Lozinka.Name = "Lozinka";
-            this.Lozinka.ReadOnly = true;
-            // 
-            // KorisnickoIme
-            // 
-            this.KorisnickoIme.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.KorisnickoIme.DataPropertyName = "KorisnickoIme";
-            this.KorisnickoIme.HeaderText = "Korisnicko ime";
-            this.KorisnickoIme.Name = "KorisnickoIme";
-            this.KorisnickoIme.ReadOnly = true;
+            this.Prezime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Prezime.DataPropertyName = "Prezime";
+            this.Prezime.HeaderText = "Prezime";
+            this.Prezime.Name = "Prezime";
+            this.Prezime.ReadOnly = true;
+            this.Prezime.Width = 80;
             // 
             // BrojIndeksa
             // 
@@ -123,32 +110,46 @@ namespace Login_Forma
             this.BrojIndeksa.ReadOnly = true;
             this.BrojIndeksa.Width = 90;
             // 
-            // Prezime
+            // KorisnickoIme
             // 
-            this.Prezime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Prezime.DataPropertyName = "Prezime";
-            this.Prezime.HeaderText = "Prezime";
-            this.Prezime.Name = "Prezime";
-            this.Prezime.ReadOnly = true;
-            this.Prezime.Width = 69;
+            this.KorisnickoIme.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.KorisnickoIme.DataPropertyName = "KorisnickoIme";
+            this.KorisnickoIme.HeaderText = "Korisnicko ime";
+            this.KorisnickoIme.Name = "KorisnickoIme";
+            this.KorisnickoIme.ReadOnly = true;
+            this.KorisnickoIme.Width = 120;
             // 
-            // Ime
+            // Lozinka
             // 
-            this.Ime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Ime.DataPropertyName = "Ime";
-            this.Ime.HeaderText = "Ime";
-            this.Ime.Name = "Ime";
-            this.Ime.ReadOnly = true;
+            this.Lozinka.DataPropertyName = "Lozinka";
+            this.Lozinka.HeaderText = "Lozinka";
+            this.Lozinka.Name = "Lozinka";
+            this.Lozinka.ReadOnly = true;
             // 
-            // ID
+            // Slika
             // 
-            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.ID.DataPropertyName = "ID";
-            this.ID.FillWeight = 5F;
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Width = 43;
+            this.Slika.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Slika.DataPropertyName = "SlikaStudenta";
+            this.Slika.HeaderText = "Slika";
+            this.Slika.Name = "Slika";
+            this.Slika.ReadOnly = true;
+            this.Slika.Width = 55;
+            // 
+            // GodinaStudija
+            // 
+            this.GodinaStudija.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.GodinaStudija.DataPropertyName = "GodinaStudija";
+            this.GodinaStudija.HeaderText = "G Studija";
+            this.GodinaStudija.Name = "GodinaStudija";
+            this.GodinaStudija.ReadOnly = true;
+            this.GodinaStudija.Width = 60;
+            // 
+            // DatumRodjenja
+            // 
+            this.DatumRodjenja.DataPropertyName = "DatumRodjenja";
+            this.DatumRodjenja.HeaderText = "DatumRodjenja";
+            this.DatumRodjenja.Name = "DatumRodjenja";
+            this.DatumRodjenja.ReadOnly = true;
             // 
             // BazaPodataka
             // 
