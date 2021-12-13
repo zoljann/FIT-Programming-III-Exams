@@ -19,6 +19,7 @@ namespace Login_Forma
         public DateTime DatumRodjenja { get; set; }
         public int GodinaStudija { get; set; }
         public List<Predmet> StudentPredmeti = new List<Predmet>();
-            
+        public Spol StudentSpol { get; set; }
+
     }
 }

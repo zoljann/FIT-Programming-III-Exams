@@ -13,7 +13,7 @@ namespace Login_Forma
 {
     public partial class Modifikacija : Form
     {
-        private Student student; //student koji se ucitava na formu
+        private Student student; //novi objekat tipa student kojeg dočekujemo na formi
         public Modifikacija(Student student = null) //postaviti na null zbog provjere ispod
         {
             InitializeComponent();
@@ -23,6 +23,7 @@ namespace Login_Forma
         private void Modifikacija_Load(object sender, EventArgs e) //na load forme ucitaj podatke o vec postojecem studentu
         {
             UcitajPodatkeOStudentu();
+           
         }
 
         private void UcitajPodatkeOStudentu()
@@ -32,8 +33,9 @@ namespace Login_Forma
                 korisnickoImeBox.Text = student.KorisnickoIme;
                 lozinkaBox.Text = student.Lozinka;
                 brojIndeksaBox.Text = student.BrojIndeksa;
-                comboBox1.Text = student.GodinaStudija.ToString(); //eksperimentisao sa combo boxom da mi moze otvoriti kad modifikujem
+                comboBox1.Text = student.GodinaStudija.ToString(); //jedan od nacina za pohranjivanje comboboxa
                 pictureBox1.Image = student.SlikaStudenta;
+                comboBox2.SelectedItem = student.StudentSpol; //ne ocitaje spasavanje na promjenu spola ERROR
         }
        
         private void sacuvajBtn_Click(object sender, EventArgs e)
@@ -43,8 +45,9 @@ namespace Login_Forma
                 student.KorisnickoIme = korisnickoImeBox.Text;
                 student.Lozinka = lozinkaBox.Text;
                 student.BrojIndeksa = brojIndeksaBox.Text;
-                student.GodinaStudija = comboBox1.SelectedIndex+1;
+                student.GodinaStudija = comboBox1.SelectedIndex+1;  //jedan od nacina za pohranjivanje comboboxa
                 student.SlikaStudenta = pictureBox1.Image;
+                student.StudentSpol = comboBox2.SelectedItem as Spol; //drugi nacin za pohranu comboBoxa, ovo je kada imamo u InMemoryDB listu a ne onu koju hardkodiramo
                 MessageBox.Show(Poruke.UspjesnoEditovan);
                 this.DialogResult = DialogResult.OK; //vraca dialog result kao OK da bi se kasnije refreshovalo nakon modifikacije
                 Close();
@@ -55,7 +58,7 @@ namespace Login_Forma
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                pictureBox1.Image = Image.FromFile(openFileDialog1.FileName); //ako je dialog prosao OK tj ako je nesto upload ta se prikaze na pictureBox1
+                pictureBox1.Image = Image.FromFile(openFileDialog1.FileName); //ako je dialog prosao OK tj ako je nesto upload da se prikaze na pictureBox1
             }
         }
     }

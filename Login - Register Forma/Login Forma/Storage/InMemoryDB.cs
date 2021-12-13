@@ -9,7 +9,43 @@ namespace Login_Forma.Storage
     public class InMemoryDB
     {
         public static List<Student> studenti = GenerisiStudenta();
-        public static List<Predmet> predmeti = new List<Predmet>();
+        public static List<Predmet> predmeti = GenerisiPredmet();
+        public static List<Spol> spolovi = GenerisiSpolove();
+
+        private static List<Spol> GenerisiSpolove()
+        {
+            return new List<Spol>()
+            {
+                new Spol()
+                {
+                    ID = 1,
+                    Naziv = "Muski"
+                },
+                 new Spol()
+                {
+                    ID = 2,
+                    Naziv = "Zenski"
+                },
+                  new Spol()
+                {
+                    ID = 3,
+                    Naziv = "******"
+                }
+            };
+        }
+
+        private static List<Predmet> GenerisiPredmet()
+        {
+            return new List<Predmet>()
+            {
+                new Predmet()
+                {
+                    ID = 1,
+                    Naziv = "PRIII",
+                    GodinaStudija = 2
+                }
+            };
+        }
 
         private static List<Student> GenerisiStudenta()
         {

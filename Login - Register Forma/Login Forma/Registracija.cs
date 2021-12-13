@@ -24,7 +24,8 @@ namespace Login_Forma
                 Validacija.ValidirajKontrolu(prezimBox, Poruke.PrazanProstor, errorP) &&
                 Validacija.ValidirajKontrolu(brojIndeksaBox, Poruke.PrazanProstor, errorP) &&
                 Validacija.ValidirajKontrolu(korisnickoImeBox, Poruke.PrazanProstor, errorP) &&
-                Validacija.ValidirajKontrolu(lozinkaBox, Poruke.PrazanProstor, errorP);
+                Validacija.ValidirajKontrolu(lozinkaBox, Poruke.PrazanProstor, errorP) &&
+                Validacija.ValidirajKontrolu(comboBox2, Poruke.PrazanProstor, errorP);
         }
         private void registracijaBtn_Click(object sender, EventArgs e) //klikom na dugme da se pohrane podaci o studentu i isti spasi u InMemoryDB
         {
@@ -40,6 +41,7 @@ namespace Login_Forma
                     GodinaStudija = comboBox1.SelectedIndex + 1,
                     BrojIndeksa = brojIndeksaBox.Text,
                     SlikaStudenta = pictureBox1.Image,
+                    StudentSpol = comboBox2.SelectedItem as Spol
                 };
                 InMemoryDB.studenti.Add(student);
                 MessageBox.Show(Poruke.UspjesnoRegistrovan);

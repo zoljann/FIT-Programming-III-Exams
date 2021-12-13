@@ -50,6 +50,8 @@ namespace Login_Forma
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.lblSpol = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -57,7 +59,7 @@ namespace Login_Forma
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(244, 159);
+            this.label2.Location = new System.Drawing.Point(244, 177);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 10;
@@ -77,7 +79,7 @@ namespace Login_Forma
             this.registracijaBtn.Location = new System.Drawing.Point(247, 258);
             this.registracijaBtn.Name = "registracijaBtn";
             this.registracijaBtn.Size = new System.Drawing.Size(274, 32);
-            this.registracijaBtn.TabIndex = 8;
+            this.registracijaBtn.TabIndex = 10;
             this.registracijaBtn.Text = "Registruj se";
             this.registracijaBtn.UseVisualStyleBackColor = true;
             this.registracijaBtn.Click += new System.EventHandler(this.registracijaBtn_Click);
@@ -87,15 +89,15 @@ namespace Login_Forma
             this.imeBox.Location = new System.Drawing.Point(336, 27);
             this.imeBox.Name = "imeBox";
             this.imeBox.Size = new System.Drawing.Size(185, 20);
-            this.imeBox.TabIndex = 0;
+            this.imeBox.TabIndex = 1;
             this.imeBox.TextChanged += new System.EventHandler(this.imeBox_TextChanged);
             // 
             // lozinkaBox
             // 
-            this.lozinkaBox.Location = new System.Drawing.Point(337, 156);
+            this.lozinkaBox.Location = new System.Drawing.Point(337, 174);
             this.lozinkaBox.Name = "lozinkaBox";
             this.lozinkaBox.Size = new System.Drawing.Size(184, 20);
-            this.lozinkaBox.TabIndex = 4;
+            this.lozinkaBox.TabIndex = 6;
             // 
             // prezimeBox
             // 
@@ -109,13 +111,13 @@ namespace Login_Forma
             this.prezimBox.Location = new System.Drawing.Point(336, 53);
             this.prezimBox.Name = "prezimBox";
             this.prezimBox.Size = new System.Drawing.Size(185, 20);
-            this.prezimBox.TabIndex = 1;
+            this.prezimBox.TabIndex = 2;
             this.prezimBox.TextChanged += new System.EventHandler(this.prezimBox_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(244, 188);
+            this.label4.Location = new System.Drawing.Point(244, 206);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 13);
             this.label4.TabIndex = 15;
@@ -123,10 +125,10 @@ namespace Login_Forma
             // 
             // brojIndeksaBox
             // 
-            this.brojIndeksaBox.Location = new System.Drawing.Point(336, 183);
+            this.brojIndeksaBox.Location = new System.Drawing.Point(336, 201);
             this.brojIndeksaBox.Name = "brojIndeksaBox";
             this.brojIndeksaBox.Size = new System.Drawing.Size(185, 20);
-            this.brojIndeksaBox.TabIndex = 5;
+            this.brojIndeksaBox.TabIndex = 7;
             // 
             // label5
             // 
@@ -142,12 +144,12 @@ namespace Login_Forma
             this.dateTimeBox.Location = new System.Drawing.Point(336, 79);
             this.dateTimeBox.Name = "dateTimeBox";
             this.dateTimeBox.Size = new System.Drawing.Size(185, 20);
-            this.dateTimeBox.TabIndex = 2;
+            this.dateTimeBox.TabIndex = 3;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(244, 214);
+            this.label6.Location = new System.Drawing.Point(244, 232);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 13);
             this.label6.TabIndex = 20;
@@ -156,7 +158,7 @@ namespace Login_Forma
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(243, 133);
+            this.label3.Location = new System.Drawing.Point(243, 151);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 13);
             this.label3.TabIndex = 22;
@@ -164,10 +166,10 @@ namespace Login_Forma
             // 
             // korisnickoImeBox
             // 
-            this.korisnickoImeBox.Location = new System.Drawing.Point(337, 130);
+            this.korisnickoImeBox.Location = new System.Drawing.Point(337, 148);
             this.korisnickoImeBox.Name = "korisnickoImeBox";
             this.korisnickoImeBox.Size = new System.Drawing.Size(184, 20);
-            this.korisnickoImeBox.TabIndex = 3;
+            this.korisnickoImeBox.TabIndex = 5;
             this.korisnickoImeBox.TextChanged += new System.EventHandler(this.korisnickoImeBox_TextChanged);
             // 
             // errorP
@@ -188,7 +190,7 @@ namespace Login_Forma
             this.button1.Location = new System.Drawing.Point(12, 230);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(162, 23);
-            this.button1.TabIndex = 7;
+            this.button1.TabIndex = 9;
             this.button1.Text = "Ucitaj sliku";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -206,10 +208,10 @@ namespace Login_Forma
             "2",
             "3",
             "4"});
-            this.comboBox1.Location = new System.Drawing.Point(336, 211);
+            this.comboBox1.Location = new System.Drawing.Point(336, 229);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(185, 21);
-            this.comboBox1.TabIndex = 6;
+            this.comboBox1.TabIndex = 8;
             // 
             // label7
             // 
@@ -220,11 +222,35 @@ namespace Login_Forma
             this.label7.TabIndex = 27;
             this.label7.Text = "Prezime";
             // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Muski",
+            "Zenski",
+            "*******"});
+            this.comboBox2.Location = new System.Drawing.Point(336, 103);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(185, 21);
+            this.comboBox2.TabIndex = 4;
+            // 
+            // lblSpol
+            // 
+            this.lblSpol.AutoSize = true;
+            this.lblSpol.Location = new System.Drawing.Point(244, 106);
+            this.lblSpol.Name = "lblSpol";
+            this.lblSpol.Size = new System.Drawing.Size(28, 13);
+            this.lblSpol.TabIndex = 43;
+            this.lblSpol.Text = "Spol";
+            // 
             // Registracija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(551, 302);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.lblSpol);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
@@ -275,5 +301,7 @@ namespace Login_Forma
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label lblSpol;
     }
 }
