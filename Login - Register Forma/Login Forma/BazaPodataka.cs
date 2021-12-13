@@ -35,8 +35,11 @@ namespace Login_Forma
         private void dgvStudenti_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             var student = dataGridView1.SelectedRows[0].DataBoundItem as Student;  //vraca objekat toga reda i mi ga pohranjujemo u student
-            if (e.ColumnIndex == 9) //provjeravamo da li se kliknulo na kolonu sa polozenim, ako jeste radis sljedece
-                MessageBox.Show("JESI");
+            if (e.ColumnIndex == 9)
+            { //provjeravamo da li se kliknulo na kolonu sa polozenim, ako jeste radis sljedece
+               var polozeni = new FormaPolozeniPredmeti(student);
+                polozeni.Show();
+            }
             else //ako se kliknulo na bilo koju drugu kolonu ucitavas podatke o studentu
             {
                 var modifikuj = new Modifikacija(student);

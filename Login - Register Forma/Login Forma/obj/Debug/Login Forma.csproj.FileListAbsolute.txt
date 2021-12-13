@@ -37,3 +37,4 @@ C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Fo
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login Forma.csproj.CoreCompileInputs.cache
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login Forma.exe
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login Forma.pdb
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login_Forma.FormaPolozeniPredmeti.resources

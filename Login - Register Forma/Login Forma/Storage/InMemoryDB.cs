@@ -41,7 +41,27 @@ namespace Login_Forma.Storage
                 new Predmet()
                 {
                     ID = 1,
-                    Naziv = "PRIII",
+                    Naziv = "Programiranje III",
+                },
+                 new Predmet()
+                {
+                    ID = 2,
+                    Naziv = "Baze podataka I",
+                },
+                  new Predmet()
+                {
+                    ID = 3,
+                    Naziv = "Strukture podataka i algoritmi",
+                },
+                   new Predmet()
+                {
+                    ID = 4,
+                    Naziv = "Matematika III",
+                },
+                    new Predmet()
+                {
+                    ID = 5,
+                    Naziv = "Računarske mreže",
                 }
             };
         }

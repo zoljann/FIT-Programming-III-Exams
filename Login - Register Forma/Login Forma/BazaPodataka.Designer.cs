@@ -158,7 +158,7 @@ namespace Login_Forma
             this.PolozeniPredmeti.HeaderText = "Polozeni predmeti";
             this.PolozeniPredmeti.Name = "PolozeniPredmeti";
             this.PolozeniPredmeti.ReadOnly = true;
-            this.PolozeniPredmeti.Text = "";
+            this.PolozeniPredmeti.Text = "Polozeni";
             this.PolozeniPredmeti.UseColumnTextForButtonValue = true;
             // 
             // BazaPodataka

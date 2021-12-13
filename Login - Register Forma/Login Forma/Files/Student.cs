@@ -18,8 +18,11 @@ namespace Login_Forma
         public string BrojIndeksa { get; set; }
         public DateTime DatumRodjenja { get; set; }
         public int GodinaStudija { get; set; }
-        public List<Predmet> StudentPredmeti = new List<Predmet>();
+        public List<PolozeniPredmeti> StudentPolozeni { get; set; }
         public Spol StudentSpol { get; set; }
-
+        public Student()
+        {
+            StudentPolozeni = new List<PolozeniPredmeti>(); //pravimo defaultni konstruktor da ne bi dobijali nullreference error kada ucitajemo polozene
+        }
     }
 }

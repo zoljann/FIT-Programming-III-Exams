@@ -57,6 +57,12 @@
     <Compile Include="Files\Predmet.cs" />
     <Compile Include="Files\Spol.cs" />
     <Compile Include="Files\Validacija.cs" />
+    <Compile Include="FormaPolozeniPredmeti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaPolozeniPredmeti.Designer.cs">
+      <DependentUpon>FormaPolozeniPredmeti.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prijava.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="Storage\InMemoryDB.cs" />
     <EmbeddedResource Include="BazaPodataka.resx">
       <DependentUpon>BazaPodataka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaPolozeniPredmeti.resx">
+      <DependentUpon>FormaPolozeniPredmeti.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prijava.resx">
       <DependentUpon>Prijava.cs</DependentUpon>
