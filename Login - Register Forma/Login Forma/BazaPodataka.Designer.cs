@@ -30,6 +30,7 @@ namespace Login_Forma
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prezime = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,7 +40,7 @@ namespace Login_Forma
             this.Slika = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GodinaStudija = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DatumRodjenja = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PolozeniPredmeti = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,14 +58,23 @@ namespace Login_Forma
             this.Lozinka,
             this.Slika,
             this.GodinaStudija,
-            this.DatumRodjenja});
+            this.DatumRodjenja,
+            this.PolozeniPredmeti});
             this.dataGridView1.Location = new System.Drawing.Point(12, 41);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(744, 237);
+            this.dataGridView1.Size = new System.Drawing.Size(894, 237);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStudenti_CellDoubleClick);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 15);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(894, 20);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // ID
             // 
@@ -143,19 +153,19 @@ namespace Login_Forma
             this.DatumRodjenja.Name = "DatumRodjenja";
             this.DatumRodjenja.ReadOnly = true;
             // 
-            // textBox1
+            // PolozeniPredmeti
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(744, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.PolozeniPredmeti.HeaderText = "Polozeni predmeti";
+            this.PolozeniPredmeti.Name = "PolozeniPredmeti";
+            this.PolozeniPredmeti.ReadOnly = true;
+            this.PolozeniPredmeti.Text = "";
+            this.PolozeniPredmeti.UseColumnTextForButtonValue = true;
             // 
             // BazaPodataka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(768, 290);
+            this.ClientSize = new System.Drawing.Size(918, 290);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "BazaPodataka";
@@ -181,5 +191,6 @@ namespace Login_Forma
         private System.Windows.Forms.DataGridViewTextBoxColumn Slika;
         private System.Windows.Forms.DataGridViewTextBoxColumn GodinaStudija;
         private System.Windows.Forms.DataGridViewTextBoxColumn DatumRodjenja;
+        private System.Windows.Forms.DataGridViewButtonColumn PolozeniPredmeti;
     }
 }

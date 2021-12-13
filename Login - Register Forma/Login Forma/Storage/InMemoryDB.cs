@@ -42,7 +42,6 @@ namespace Login_Forma.Storage
                 {
                     ID = 1,
                     Naziv = "PRIII",
-                    GodinaStudija = 2
                 }
             };
         }

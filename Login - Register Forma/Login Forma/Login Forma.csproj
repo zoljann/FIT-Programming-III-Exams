@@ -52,6 +52,7 @@
     <Compile Include="BazaPodataka.Designer.cs">
       <DependentUpon>BazaPodataka.cs</DependentUpon>
     </Compile>
+    <Compile Include="Files\PolozeniPredmeti.cs" />
     <Compile Include="Files\Poruke.cs" />
     <Compile Include="Files\Predmet.cs" />
     <Compile Include="Files\Spol.cs" />

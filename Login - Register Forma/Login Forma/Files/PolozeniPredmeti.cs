@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Login_Forma.Files
 {
-    public class Predmet
+    public class PolozeniPredmeti
     {
         public int ID { get; set; }
-        public string Naziv { get; set; }
+        public Predmet Predmet { get; set; }
+        public int Ocjena { get; set; }
+        public DateTime DatumPolaganja { get; set; }
     }
 }
