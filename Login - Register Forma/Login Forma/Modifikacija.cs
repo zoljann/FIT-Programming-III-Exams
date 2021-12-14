@@ -23,7 +23,13 @@ namespace Login_Forma
         private void Modifikacija_Load(object sender, EventArgs e) //na load forme ucitaj podatke o vec postojecem studentu
         {
             UcitajPodatkeOStudentu();
+            UcitajSpolove();
            
+        }
+
+        private void UcitajSpolove()
+        {
+            //spolove zavrsiti
         }
 
         private void UcitajPodatkeOStudentu()
