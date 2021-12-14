@@ -36,6 +36,7 @@ namespace Login_Forma
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lozinkaBox
@@ -97,19 +98,32 @@ namespace Login_Forma
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label4.Location = new System.Drawing.Point(407, 271);
+            this.label4.Location = new System.Drawing.Point(309, 270);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label4.Size = new System.Drawing.Size(109, 13);
+            this.label4.Size = new System.Drawing.Size(176, 13);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Otvori bazu podataka";
+            this.label4.Text = "Otvori bazu podataka(InMemoryDB)";
             this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label5.Location = new System.Drawing.Point(309, 293);
+            this.label5.Name = "label5";
+            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label5.Size = new System.Drawing.Size(213, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Otvori pravu bazu podataka(predavanje 10)";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Aplikacija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(528, 293);
+            this.ClientSize = new System.Drawing.Size(519, 317);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -134,6 +148,7 @@ namespace Login_Forma
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 

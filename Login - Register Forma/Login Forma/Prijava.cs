@@ -35,5 +35,11 @@ namespace Login_Forma
             var bazaPodataka = new BazaPodataka();
             bazaPodataka.Show();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            var formaStudenti = new frmKandidati();
+            formaStudenti.Show();
+        }
     }
 }
