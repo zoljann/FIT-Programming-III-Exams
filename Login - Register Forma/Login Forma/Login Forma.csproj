@@ -71,7 +71,8 @@
     <Compile Include="BazaPodataka.Designer.cs">
       <DependentUpon>BazaPodataka.cs</DependentUpon>
     </Compile>
-    <Compile Include="Files\Kandidati.cs" />
+    <Compile Include="DB\KonekcijaNaBazu.cs" />
+    <Compile Include="Files\Kandidat.cs" />
     <Compile Include="Files\PolozeniPredmeti.cs" />
     <Compile Include="Helperi\Poruke.cs" />
     <Compile Include="Files\Predmet.cs" />

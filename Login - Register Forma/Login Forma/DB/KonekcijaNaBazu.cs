@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Login_Forma.Files;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -15,5 +16,14 @@ namespace Login_Forma.DB
         {
 
         }
+        public DbSet<Kandidat> Kandidati { get; set; } //property klase koji sluze za komunikaciju sa pojedinim tabelama baze
+
+        //ovo ispod zamjenjuje [Table("Kandidati")] u klasi Kandidat.cs
+
+      //  protected override void OnModelCreating(DbModelBuilder modelBuilder) //logika komunikacije mapiranja izmedju tabela i objekata
+      //  {
+      //      base.OnModelCreating(modelBuilder);
+      //      modelBuilder.Entity<Kandidat>().ToTable("Kandidati");
+      //  }
     }
 }
