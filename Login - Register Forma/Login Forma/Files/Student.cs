@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,8 @@ namespace Login_Forma
     public class Student
     {
         public int ID { get; set; }
-        public Image SlikaStudenta { get; set; }
+        // public Image SlikaStudenta { get; set; } baza ne podrzava tip podatka Image pa editujemo na niz bytova
+        public byte[] SlikaStudenta { get; set; }
         public string Ime { get; set; }
         public string Prezime { get; set; }
         public string KorisnickoIme { get; set; }
@@ -19,6 +21,7 @@ namespace Login_Forma
         public DateTime DatumRodjenja { get; set; }
         public int GodinaStudija { get; set; }
         public List<PolozeniPredmeti> StudentPolozeni { get; set; }
+        [NotMapped] //oznacava da ne zelimo da ucitavamo podatke na bazu koji se odnose na spol
         public Spol StudentSpol { get; set; }
         public Student()
         {

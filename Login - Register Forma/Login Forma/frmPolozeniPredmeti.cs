@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace Login_Forma
 {
-    public partial class FormaPolozeniPredmeti : Form
+    public partial class frmPolozeniPredmeti : Form
     {
         private Student student;
-        public FormaPolozeniPredmeti(Student student)
+        public frmPolozeniPredmeti(Student student)
         {
             InitializeComponent();
             this.student = student;

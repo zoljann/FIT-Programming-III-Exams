@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Login_Forma.Files;
+using Login_Forma.Helperi;
 using Login_Forma.Storage;
 namespace Login_Forma
 {
-    public partial class Modifikacija : Form
+    public partial class frmModifikacija : Form
     {
         private Student student; //novi objekat tipa student kojeg dočekujemo na formi
-        public Modifikacija(Student student = null) //postaviti na null zbog provjere ispod
+        public frmModifikacija(Student student = null) //postaviti na null zbog provjere ispod
         {
             InitializeComponent();
             this.student = student ?? new Student(); //prilikom loadanja forme ako je student bio null znaci da pravimo novog, ako ukoliko je postojao samo modifikujemo
@@ -40,7 +41,8 @@ namespace Login_Forma
                 lozinkaBox.Text = student.Lozinka;
                 brojIndeksaBox.Text = student.BrojIndeksa;
                 comboBox1.Text = student.GodinaStudija.ToString(); //jedan od nacina za pohranjivanje comboboxa
-                pictureBox1.Image = student.SlikaStudenta;
+                pictureBox1.Image = ImageHelper.FromByteToImage(student.SlikaStudenta);
+                dateTimeBox.Value = student.DatumRodjenja;
                 comboBox2.SelectedItem = student.StudentSpol; //ne ocitaje spasavanje na promjenu spola ERROR
         }
        
@@ -52,7 +54,8 @@ namespace Login_Forma
                 student.Lozinka = lozinkaBox.Text;
                 student.BrojIndeksa = brojIndeksaBox.Text;
                 student.GodinaStudija = comboBox1.SelectedIndex+1;  //jedan od nacina za pohranjivanje comboboxa
-                student.SlikaStudenta = pictureBox1.Image;
+                student.SlikaStudenta = ImageHelper.FromImageToByte(pictureBox1.Image);
+                student.DatumRodjenja = dateTimeBox.Value;
                 student.StudentSpol = comboBox2.SelectedItem as Spol; //drugi nacin za pohranu comboBoxa, ovo je kada imamo u InMemoryDB listu a ne onu koju hardkodiramo
                 MessageBox.Show(Poruke.UspjesnoEditovan);
                 this.DialogResult = DialogResult.OK; //vraca dialog result kao OK da bi se kasnije refreshovalo nakon modifikacije

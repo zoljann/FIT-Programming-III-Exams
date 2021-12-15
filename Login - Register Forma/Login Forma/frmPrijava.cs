@@ -2,10 +2,13 @@
 using System;
 using System.Windows.Forms;
 using Login_Forma.Files;
+using Login_Forma.DB;
+
 namespace Login_Forma
 {
     public partial class Aplikacija : Form
     {
+        KonekcijaNaBazu db = new KonekcijaNaBazu();
         public Aplikacija()
         {
             InitializeComponent();
@@ -17,7 +20,7 @@ namespace Login_Forma
             var lozinka = lozinkaBox.Text;
             if (!string.IsNullOrEmpty(korisnickoIme) || string.IsNullOrEmpty(lozinka))
             {
-                foreach (var studenta in InMemoryDB.studenti)
+                foreach (var studenta in db.Studenti)
                 {
                     if (korisnickoIme == studenta.KorisnickoIme && lozinka == studenta.Lozinka)
                         MessageBox.Show($"{Poruke.Dobrodosli} {korisnickoIme}!");
@@ -26,13 +29,13 @@ namespace Login_Forma
         }
         private void label3_Click(object sender, EventArgs e) //klik na label da vodi na registracijsku formu
         {
-            var registracija = new Registracija();
+            var registracija = new frmRegistracija();
             registracija.Show();
         }
 
         private void label4_Click(object sender, EventArgs e) //klik na label da vodi na "bazu podataka"
         {
-            var bazaPodataka = new BazaPodataka();
+            var bazaPodataka = new frmBazaPodataka();
             bazaPodataka.Show();
         }
 

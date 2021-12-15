@@ -65,24 +65,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BazaPodataka.cs">
+    <Compile Include="frmBazaPodataka.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BazaPodataka.Designer.cs">
-      <DependentUpon>BazaPodataka.cs</DependentUpon>
+    <Compile Include="frmBazaPodataka.Designer.cs">
+      <DependentUpon>frmBazaPodataka.cs</DependentUpon>
     </Compile>
     <Compile Include="DB\KonekcijaNaBazu.cs" />
     <Compile Include="Files\Kandidat.cs" />
     <Compile Include="Files\PolozeniPredmeti.cs" />
+    <Compile Include="Helperi\ImageHelper.cs" />
     <Compile Include="Helperi\Poruke.cs" />
     <Compile Include="Files\Predmet.cs" />
     <Compile Include="Files\Spol.cs" />
     <Compile Include="Helperi\Validacija.cs" />
-    <Compile Include="FormaPolozeniPredmeti.cs">
+    <Compile Include="frmPolozeniPredmeti.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormaPolozeniPredmeti.Designer.cs">
-      <DependentUpon>FormaPolozeniPredmeti.cs</DependentUpon>
+    <Compile Include="frmPolozeniPredmeti.Designer.cs">
+      <DependentUpon>frmPolozeniPredmeti.cs</DependentUpon>
     </Compile>
     <Compile Include="frmKandidati.cs">
       <SubType>Form</SubType>
@@ -90,45 +91,45 @@
     <Compile Include="frmKandidati.Designer.cs">
       <DependentUpon>frmKandidati.cs</DependentUpon>
     </Compile>
-    <Compile Include="Prijava.cs">
+    <Compile Include="frmPrijava.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Prijava.Designer.cs">
-      <DependentUpon>Prijava.cs</DependentUpon>
+    <Compile Include="frmPrijava.Designer.cs">
+      <DependentUpon>frmPrijava.cs</DependentUpon>
     </Compile>
     <Compile Include="Files\Student.cs" />
-    <Compile Include="Registracija.cs">
+    <Compile Include="frmRegistracija.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registracija.Designer.cs">
-      <DependentUpon>Registracija.cs</DependentUpon>
+    <Compile Include="frmRegistracija.Designer.cs">
+      <DependentUpon>frmRegistracija.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modifikacija.cs">
+    <Compile Include="frmModifikacija.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modifikacija.Designer.cs">
-      <DependentUpon>Modifikacija.cs</DependentUpon>
+    <Compile Include="frmModifikacija.Designer.cs">
+      <DependentUpon>frmModifikacija.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DB\InMemoryDB.cs" />
-    <EmbeddedResource Include="BazaPodataka.resx">
-      <DependentUpon>BazaPodataka.cs</DependentUpon>
+    <EmbeddedResource Include="frmBazaPodataka.resx">
+      <DependentUpon>frmBazaPodataka.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormaPolozeniPredmeti.resx">
-      <DependentUpon>FormaPolozeniPredmeti.cs</DependentUpon>
+    <EmbeddedResource Include="frmPolozeniPredmeti.resx">
+      <DependentUpon>frmPolozeniPredmeti.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKandidati.resx">
       <DependentUpon>frmKandidati.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Prijava.resx">
-      <DependentUpon>Prijava.cs</DependentUpon>
+    <EmbeddedResource Include="frmPrijava.resx">
+      <DependentUpon>frmPrijava.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Registracija.resx">
-      <DependentUpon>Registracija.cs</DependentUpon>
+    <EmbeddedResource Include="frmRegistracija.resx">
+      <DependentUpon>frmRegistracija.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modifikacija.resx">
-      <DependentUpon>Modifikacija.cs</DependentUpon>
+    <EmbeddedResource Include="frmModifikacija.resx">
+      <DependentUpon>frmModifikacija.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

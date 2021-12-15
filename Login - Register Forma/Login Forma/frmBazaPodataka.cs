@@ -7,14 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Login_Forma.DB;
 using Login_Forma.Files;
 using Login_Forma.Storage;
 
 namespace Login_Forma
 {
-    public partial class BazaPodataka : Form
+    public partial class frmBazaPodataka : Form
     {
-        public BazaPodataka()
+        KonekcijaNaBazu db = new KonekcijaNaBazu();
+        public frmBazaPodataka()
         {
             InitializeComponent();
             dataGridView1.AutoGenerateColumns = false; //da se ne generisu kolone same
@@ -28,7 +30,8 @@ namespace Login_Forma
         public void UcitajStudente(List<Student> podaci = null)
         {
             dataGridView1.DataSource = null; //refresh
-            dataGridView1.DataSource = podaci ?? InMemoryDB.studenti;
+            //dataGridView1.DataSource = podaci ?? InMemoryDB.studenti;
+            dataGridView1.DataSource = podaci ?? db.Studenti.ToList();
         }
 
         //Editovanje
@@ -37,12 +40,12 @@ namespace Login_Forma
             var student = dataGridView1.SelectedRows[0].DataBoundItem as Student;  //vraca objekat toga reda i mi ga pohranjujemo u student
             if (e.ColumnIndex == 9)
             { //provjeravamo da li se kliknulo na kolonu sa polozenim, ako jeste radis sljedece
-               var polozeni = new FormaPolozeniPredmeti(student);
+               var polozeni = new frmPolozeniPredmeti(student);
                 polozeni.Show();
             }
             else //ako se kliknulo na bilo koju drugu kolonu ucitavas podatke o studentu
             {
-                var modifikuj = new Modifikacija(student);
+                var modifikuj = new frmModifikacija(student);
                 if (modifikuj.ShowDialog() == DialogResult.OK) //provjeravamo da li je dialog prosao OK, ako jeste ucitava studente
                     UcitajStudente();
             }
@@ -53,7 +56,7 @@ namespace Login_Forma
         {
             var filter = textBox1.Text;
             var rezultat = new List<Student>(); //nova lista koju saljemo 
-            foreach (var student in InMemoryDB.studenti)
+            foreach (var student in db.Studenti)
             {
                 if (student.Ime.ToLower().Contains(filter) || student.Prezime.ToLower().Contains(filter))
                     rezultat.Add(student);

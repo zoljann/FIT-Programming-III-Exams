@@ -28,16 +28,12 @@ C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Fo
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\Login Forma.exe
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\Login Forma.pdb
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login Forma.csprojAssemblyReference.cache
-C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login_Forma.BazaPodataka.resources
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login_Forma.Aplikacija.resources
-C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login_Forma.Registracija.resources
-C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login_Forma.Modifikacija.resources
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login_Forma.Properties.Resources.resources
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login Forma.csproj.GenerateResource.cache
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login Forma.csproj.CoreCompileInputs.cache
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login Forma.exe
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login Forma.pdb
-C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login_Forma.FormaPolozeniPredmeti.resources
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login_Forma.frmKandidati.resources
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\EntityFramework.dll
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\EntityFramework.SqlServer.dll
@@ -48,3 +44,7 @@ C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Fo
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\System.Data.SQLite.xml
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login Forma.csproj.CopyComplete
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login_Forma.frmModifikacija.resources
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login_Forma.frmBazaPodataka.resources
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login_Forma.frmPolozeniPredmeti.resources
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login_Forma.frmRegistracija.resources

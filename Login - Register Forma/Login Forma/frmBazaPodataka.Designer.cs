@@ -1,7 +1,7 @@
 ﻿
 namespace Login_Forma
 {
-    partial class BazaPodataka
+    partial class frmBazaPodataka
     {
         /// <summary>
         /// Required designer variable.

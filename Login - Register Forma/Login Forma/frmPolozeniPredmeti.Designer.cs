@@ -1,7 +1,7 @@
 ﻿
 namespace Login_Forma
 {
-    partial class FormaPolozeniPredmeti
+    partial class frmPolozeniPredmeti
     {
         /// <summary>
         /// Required designer variable.

@@ -1,7 +1,7 @@
 ﻿
 namespace Login_Forma
 {
-    partial class Modifikacija
+    partial class frmModifikacija
     {
         /// <summary>
         /// Required designer variable.

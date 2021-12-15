@@ -17,13 +17,15 @@ namespace Login_Forma.DB
 
         }
         public DbSet<Kandidat> Kandidati { get; set; } //property klase koji sluze za komunikaciju sa pojedinim tabelama baze
+        public DbSet<Student> Studenti { get; set; }
 
         //ovo ispod zamjenjuje [Table("Kandidati")] u klasi Kandidat.cs
 
-      //  protected override void OnModelCreating(DbModelBuilder modelBuilder) //logika komunikacije mapiranja izmedju tabela i objekata
-      //  {
-      //      base.OnModelCreating(modelBuilder);
-      //      modelBuilder.Entity<Kandidat>().ToTable("Kandidati");
-      //  }
+          protected override void OnModelCreating(DbModelBuilder modelBuilder) //logika komunikacije mapiranja izmedju tabela i objekata
+          {
+              base.OnModelCreating(modelBuilder);
+            //modelBuilder.Entity<Kandidat>().ToTable("Kandidati");
+              modelBuilder.Entity<Student>().ToTable("Studenti");
+          }
     }
 }
