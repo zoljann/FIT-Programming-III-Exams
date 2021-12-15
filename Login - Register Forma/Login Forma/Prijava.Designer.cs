@@ -98,31 +98,31 @@ namespace Login_Forma
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label4.Location = new System.Drawing.Point(309, 270);
+            this.label4.Location = new System.Drawing.Point(322, 242);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label4.Size = new System.Drawing.Size(176, 13);
+            this.label4.Size = new System.Drawing.Size(111, 13);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Otvori bazu podataka(InMemoryDB)";
+            this.label4.Text = "Otvori bazu studenata";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label5.Location = new System.Drawing.Point(309, 293);
+            this.label5.Location = new System.Drawing.Point(322, 268);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label5.Size = new System.Drawing.Size(213, 13);
+            this.label5.Size = new System.Drawing.Size(185, 13);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Otvori pravu bazu podataka(predavanje 10)";
+            this.label5.Text = "Otvori bazu kandidata(predavanje 10)";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Aplikacija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(519, 317);
+            this.ClientSize = new System.Drawing.Size(519, 288);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
