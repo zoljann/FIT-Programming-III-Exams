@@ -14,6 +14,7 @@ namespace Login_Forma
         public frmRegistracija()
         {
             InitializeComponent();
+            comboBox2.SelectedIndex = 2; //da spol ne ostane null
 
         }
         private bool Validiraj()
