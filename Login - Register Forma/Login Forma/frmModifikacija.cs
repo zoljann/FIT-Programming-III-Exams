@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Login_Forma.DB;
 using Login_Forma.Files;
 using Login_Forma.Helperi;
 using Login_Forma.Storage;
@@ -15,6 +16,7 @@ namespace Login_Forma
     public partial class frmModifikacija : Form
     {
         private Student student; //novi objekat tipa student kojeg dočekujemo na formi
+        KonekcijaNaBazu db = new KonekcijaNaBazu();
         public frmModifikacija(Student student = null) //postaviti na null zbog provjere ispod
         {
             InitializeComponent();
@@ -24,14 +26,9 @@ namespace Login_Forma
         private void Modifikacija_Load(object sender, EventArgs e) //na load forme ucitaj podatke o vec postojecem studentu
         {
             UcitajPodatkeOStudentu();
-            UcitajSpolove();
-           
         }
 
-        private void UcitajSpolove()
-        {
-            //spolove zavrsiti
-        }
+        
 
         private void UcitajPodatkeOStudentu()
         {
@@ -43,7 +40,7 @@ namespace Login_Forma
                 comboBox1.Text = student.GodinaStudija.ToString(); //jedan od nacina za pohranjivanje comboboxa
                 pictureBox1.Image = ImageHelper.FromByteToImage(student.SlikaStudenta);
                 dateTimeBox.Value = student.DatumRodjenja;
-                comboBox2.SelectedItem = student.StudentSpol; //ne ocitaje spasavanje na promjenu spola ERROR
+                comboBox2.SelectedItem = student.Spol;
         }
        
         private void sacuvajBtn_Click(object sender, EventArgs e)
@@ -56,7 +53,8 @@ namespace Login_Forma
                 student.GodinaStudija = comboBox1.SelectedIndex+1;  //jedan od nacina za pohranjivanje comboboxa
                 student.SlikaStudenta = ImageHelper.FromImageToByte(pictureBox1.Image);
                 student.DatumRodjenja = dateTimeBox.Value;
-                student.StudentSpol = comboBox2.SelectedItem as Spol; //drugi nacin za pohranu comboBoxa, ovo je kada imamo u InMemoryDB listu a ne onu koju hardkodiramo
+                student.Spol = comboBox2.SelectedItem.ToString();
+                db.SaveChanges();
                 MessageBox.Show(Poruke.UspjesnoEditovan);
                 this.DialogResult = DialogResult.OK; //vraca dialog result kao OK da bi se kasnije refreshovalo nakon modifikacije
                 Close();

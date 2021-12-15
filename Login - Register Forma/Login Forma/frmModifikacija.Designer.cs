@@ -226,7 +226,7 @@ namespace Login_Forma
             this.comboBox2.Size = new System.Drawing.Size(185, 21);
             this.comboBox2.TabIndex = 42;
             // 
-            // Modifikacija
+            // frmModifikacija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -250,7 +250,7 @@ namespace Login_Forma
             this.Controls.Add(this.registracijaBtn);
             this.Controls.Add(this.imeBox);
             this.Controls.Add(this.lozinkaBox);
-            this.Name = "Modifikacija";
+            this.Name = "frmModifikacija";
             this.Text = "Modifikacija";
             this.Load += new System.EventHandler(this.Modifikacija_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

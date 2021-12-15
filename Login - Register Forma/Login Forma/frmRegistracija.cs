@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Login_Forma.Storage;
+﻿using Login_Forma.DB;
 using Login_Forma.Files;
 using Login_Forma.Helperi;
-using Login_Forma.DB;
+using System;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace Login_Forma
 {
@@ -37,7 +31,7 @@ namespace Login_Forma
             {
                 var student = new Student()
                 {
-                   // ID = InMemoryDB.studenti.Count + 1, //ID je sada autonumber u pravoj bazi
+                    // ID = InMemoryDB.studenti.Count + 1, //ID je sada autonumber u pravoj bazi
                     Ime = imeBox.Text,
                     Prezime = prezimBox.Text,
                     KorisnickoIme = korisnickoImeBox.Text,
@@ -46,7 +40,7 @@ namespace Login_Forma
                     BrojIndeksa = brojIndeksaBox.Text,
                     SlikaStudenta = ImageHelper.FromImageToByte(pictureBox1.Image),
                     DatumRodjenja = dateTimeBox.Value,
-                    StudentSpol = comboBox2.SelectedItem as Spol
+                    Spol = comboBox2.Text,
                 };
                 //InMemoryDB.studenti.Add(student); ne dodajemo u inmemory nego u pravu bazu
                 db.Studenti.Add(student);

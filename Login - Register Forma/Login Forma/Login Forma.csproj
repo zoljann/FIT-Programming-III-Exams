@@ -77,7 +77,6 @@
     <Compile Include="Helperi\ImageHelper.cs" />
     <Compile Include="Helperi\Poruke.cs" />
     <Compile Include="Files\Predmet.cs" />
-    <Compile Include="Files\Spol.cs" />
     <Compile Include="Helperi\Validacija.cs" />
     <Compile Include="frmPolozeniPredmeti.cs">
       <SubType>Form</SubType>

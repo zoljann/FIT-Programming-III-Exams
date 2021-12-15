@@ -20,9 +20,9 @@ namespace Login_Forma
         public string BrojIndeksa { get; set; }
         public DateTime DatumRodjenja { get; set; }
         public int GodinaStudija { get; set; }
+        public string Spol { get; set; }
         public List<PolozeniPredmeti> StudentPolozeni { get; set; }
-        [NotMapped] //oznacava da ne zelimo da ucitavamo podatke na bazu koji se odnose na spol
-        public Spol StudentSpol { get; set; }
+       // [NotMapped] oznacava da ne zelimo da ucitavamo podatke koji se nalaze ispod ovoga
         public Student()
         {
             StudentPolozeni = new List<PolozeniPredmeti>(); //pravimo defaultni konstruktor da ne bi dobijali nullreference error kada ucitajemo polozene

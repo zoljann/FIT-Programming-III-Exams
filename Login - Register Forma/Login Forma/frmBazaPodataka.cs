@@ -29,9 +29,17 @@ namespace Login_Forma
 
         public void UcitajStudente(List<Student> podaci = null)
         {
-            dataGridView1.DataSource = null; //refresh
-            //dataGridView1.DataSource = podaci ?? InMemoryDB.studenti;
-            dataGridView1.DataSource = podaci ?? db.Studenti.ToList();
+            try
+            {
+                //dataGridView1.DataSource = null; //refresh
+                //dataGridView1.DataSource = podaci ?? InMemoryDB.studenti;
+                dataGridView1.DataSource = podaci ?? db.Studenti.ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message} {Environment.NewLine} + {ex.InnerException?.Message}");
+            }
+           
         }
 
         //Editovanje
