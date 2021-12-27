@@ -19,6 +19,8 @@ namespace Login_Forma.DB
         public DbSet<Kandidat> Kandidati { get; set; } //property klase koji sluze za komunikaciju sa pojedinim tabelama baze
         public DbSet<Student> Studenti { get; set; }
         public DbSet<Spol> Spolovi { get; set; }
+        public DbSet<Predmet> Predmeti { get; set; }
+        public DbSet<StudentPredmet> StudentPredmeti { get; set; }
 
         //ovo ispod zamjenjuje [Table("Kandidati")] u klasi Kandidat.cs
 
@@ -28,6 +30,8 @@ namespace Login_Forma.DB
             //modelBuilder.Entity<Kandidat>().ToTable("Kandidati");
               modelBuilder.Entity<Student>().ToTable("Studenti");
               modelBuilder.Entity<Spol>().ToTable("Spolovi");
+              modelBuilder.Entity<Predmet>().ToTable("Predmet");
+              modelBuilder.Entity<StudentPredmet>().ToTable("StudentiPredmeti");
         }
     }
 }

@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="DB\BazaDB.cs" />
     <Compile Include="Files\Spol.cs" />
+    <Compile Include="Files\StudentPredmet.cs" />
     <Compile Include="frmBazaPodataka.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -1,4 +1,5 @@
-﻿using Login_Forma.Files;
+﻿using Login_Forma.DB;
+using Login_Forma.Files;
 using Login_Forma.Storage;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace Login_Forma
     public partial class frmPolozeniPredmeti : Form
     {
         private Student student;
+        KonekcijaNaBazu db = BazaDB.Baza;
         public frmPolozeniPredmeti(Student student)
         {
             InitializeComponent();
@@ -26,14 +28,15 @@ namespace Login_Forma
         {
             if (PredmetNePostoji())
             {
-                var polozeni = new PolozeniPredmeti()
+                var polozeni = new StudentPredmet()
                 {
-                    ID = student.StudentPolozeni.Count + 1,
                     DatumPolaganja = dateTimePicker1.Value,
                     Ocjena = int.Parse(comboBox2.Text), //posto je ocjena int moramo parsati text u int
                     Predmet = comboBox1.SelectedItem as Predmet, //selected item dobijamo njegov ID i naziv, i pohranimo ga u predmet
+                    Student = student, //da student ne bi bio null tj. da se u bazu pohrani studentov ID
                 };
-                student.StudentPolozeni.Add(polozeni);
+                db.StudentPredmeti.Add(polozeni);
+                db.SaveChanges();
                 UcitajPolozenePredmete();
             }
             else
@@ -56,12 +59,13 @@ namespace Login_Forma
         private void UcitajPolozenePredmete()
         {
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = student.StudentPolozeni;
+            var polozeni = db.StudentPredmeti.Where(s => s.Student.ID == student.ID).ToList(); //na dgv ucitava trenutnog studenta i njegove polozene
+            dataGridView1.DataSource = polozeni;
         }
 
         private void UcitajPredmete()
         {
-            comboBox1.DataSource = InMemoryDB.predmeti;
+            comboBox1.DataSource = db.Predmeti.ToList();
             comboBox1.ValueMember = "ID";
             comboBox1.DisplayMember = "Naziv";
         }
