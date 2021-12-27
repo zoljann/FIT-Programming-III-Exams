@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DB\BazaDB.cs" />
+    <Compile Include="Files\PolozeniPredmeti.cs" />
     <Compile Include="Files\Spol.cs" />
     <Compile Include="Files\StudentPredmet.cs" />
     <Compile Include="frmBazaPodataka.cs">
@@ -76,7 +77,6 @@
     </Compile>
     <Compile Include="DB\KonekcijaNaBazu.cs" />
     <Compile Include="Files\Kandidat.cs" />
-    <Compile Include="Files\PolozeniPredmeti.cs" />
     <Compile Include="Helperi\ImageHelper.cs" />
     <Compile Include="Helperi\Poruke.cs" />
     <Compile Include="Files\Predmet.cs" />
