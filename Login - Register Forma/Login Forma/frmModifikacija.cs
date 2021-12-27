@@ -16,7 +16,7 @@ namespace Login_Forma
     public partial class frmModifikacija : Form
     {
         private Student student; //novi objekat tipa student kojeg dočekujemo na formi
-        KonekcijaNaBazu db = new KonekcijaNaBazu();
+        KonekcijaNaBazu db = BazaDB.Baza;
         public frmModifikacija(Student student = null) //postaviti na null zbog provjere ispod
         {
             InitializeComponent();
@@ -26,9 +26,13 @@ namespace Login_Forma
         private void Modifikacija_Load(object sender, EventArgs e) //na load forme ucitaj podatke o vec postojecem studentu
         {
             UcitajPodatkeOStudentu();
+            UcitajSpolove(); //moramo dodati i ucitavanje spolova u combobox iz baze podataka
         }
 
-        
+        private void UcitajSpolove()
+        {
+            comboBox2.DataSource = db.Spolovi.ToList();
+        }
 
         private void UcitajPodatkeOStudentu()
         {
@@ -53,12 +57,11 @@ namespace Login_Forma
                 student.GodinaStudija = comboBox1.SelectedIndex+1;  //jedan od nacina za pohranjivanje comboboxa
                 student.SlikaStudenta = ImageHelper.FromImageToByte(pictureBox1.Image);
                 student.DatumRodjenja = dateTimeBox.Value;
-                student.Spol = comboBox2.SelectedItem.ToString();
+                student.Spol = comboBox2.SelectedItem as Spol;
                 db.SaveChanges();
                 MessageBox.Show(Poruke.UspjesnoEditovan);
                 this.DialogResult = DialogResult.OK; //vraca dialog result kao OK da bi se kasnije refreshovalo nakon modifikacije
                 Close();
-            
             }
 
         private void button1_Click(object sender, EventArgs e)

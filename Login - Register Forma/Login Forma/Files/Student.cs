@@ -20,7 +20,8 @@ namespace Login_Forma
         public string BrojIndeksa { get; set; }
         public DateTime DatumRodjenja { get; set; }
         public int GodinaStudija { get; set; }
-        public string Spol { get; set; }
+        // public string Spol { get; set; }
+        public virtual Spol Spol { get; set; }
         public List<PolozeniPredmeti> StudentPolozeni { get; set; }
        // [NotMapped] oznacava da ne zelimo da ucitavamo podatke koji se nalaze ispod ovoga
         public Student()

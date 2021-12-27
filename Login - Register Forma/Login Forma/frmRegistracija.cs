@@ -10,7 +10,7 @@ namespace Login_Forma
 {
     public partial class frmRegistracija : Form
     {
-        KonekcijaNaBazu db = new KonekcijaNaBazu();
+        KonekcijaNaBazu db = BazaDB.Baza;
         public frmRegistracija()
         {
             InitializeComponent();
@@ -41,7 +41,7 @@ namespace Login_Forma
                     BrojIndeksa = brojIndeksaBox.Text,
                     SlikaStudenta = ImageHelper.FromImageToByte(pictureBox1.Image),
                     DatumRodjenja = dateTimeBox.Value,
-                    Spol = comboBox2.Text,
+                    Spol = comboBox2.SelectedItem as Spol,
                 };
                 //InMemoryDB.studenti.Add(student); ne dodajemo u inmemory nego u pravu bazu
                 db.Studenti.Add(student);

@@ -34,6 +34,7 @@ namespace Login_Forma
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prezime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Spol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BrojIndeksa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.KorisnickoIme = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lozinka = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,6 +54,7 @@ namespace Login_Forma
             this.ID,
             this.Ime,
             this.Prezime,
+            this.Spol,
             this.BrojIndeksa,
             this.KorisnickoIme,
             this.Lozinka,
@@ -102,6 +104,14 @@ namespace Login_Forma
             this.Prezime.Name = "Prezime";
             this.Prezime.ReadOnly = true;
             this.Prezime.Width = 80;
+            // 
+            // Spol
+            // 
+            this.Spol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Spol.DataPropertyName = "Spol";
+            this.Spol.HeaderText = "Spol";
+            this.Spol.Name = "Spol";
+            this.Spol.ReadOnly = true;
             // 
             // BrojIndeksa
             // 
@@ -161,14 +171,14 @@ namespace Login_Forma
             this.PolozeniPredmeti.Text = "Polozeni";
             this.PolozeniPredmeti.UseColumnTextForButtonValue = true;
             // 
-            // BazaPodataka
+            // frmBazaPodataka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(918, 290);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "BazaPodataka";
+            this.Name = "frmBazaPodataka";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BazaPodataka";
             this.Load += new System.EventHandler(this.BazaPodataka_Load);
@@ -185,6 +195,7 @@ namespace Login_Forma
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ime;
         private System.Windows.Forms.DataGridViewTextBoxColumn Prezime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Spol;
         private System.Windows.Forms.DataGridViewTextBoxColumn BrojIndeksa;
         private System.Windows.Forms.DataGridViewTextBoxColumn KorisnickoIme;
         private System.Windows.Forms.DataGridViewTextBoxColumn Lozinka;

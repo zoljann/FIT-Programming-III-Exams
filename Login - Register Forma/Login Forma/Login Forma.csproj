@@ -65,6 +65,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB\BazaDB.cs" />
+    <Compile Include="Files\Spol.cs" />
     <Compile Include="frmBazaPodataka.cs">
       <SubType>Form</SubType>
     </Compile>

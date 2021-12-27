@@ -8,7 +8,7 @@ namespace Login_Forma
 {
     public partial class Aplikacija : Form
     {
-        KonekcijaNaBazu db = new KonekcijaNaBazu();
+        KonekcijaNaBazu db = BazaDB.Baza;
         public Aplikacija()
         {
             InitializeComponent();
