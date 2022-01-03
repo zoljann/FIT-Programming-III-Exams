@@ -58,6 +58,7 @@ namespace Login_Forma
                 student.SlikaStudenta = ImageHelper.FromImageToByte(pictureBox1.Image);
                 student.DatumRodjenja = dateTimeBox.Value;
                 student.Spol = comboBox2.SelectedItem as Spol;
+                db.Entry(student).State = System.Data.Entity.EntityState.Modified; //spasi modifikaciju
                 db.SaveChanges();
                 MessageBox.Show(Poruke.UspjesnoEditovan);
                 this.DialogResult = DialogResult.OK; //vraca dialog result kao OK da bi se kasnije refreshovalo nakon modifikacije
