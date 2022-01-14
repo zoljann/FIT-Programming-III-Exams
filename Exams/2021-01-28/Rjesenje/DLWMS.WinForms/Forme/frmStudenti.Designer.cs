@@ -209,7 +209,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(594, 325);
+            this.button1.Location = new System.Drawing.Point(594, 334);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 23);
             this.button1.TabIndex = 10;
@@ -221,7 +221,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(706, 358);
+            this.ClientSize = new System.Drawing.Size(706, 370);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblProsjecna);
             this.Controls.Add(this.lblBrojStudenata);

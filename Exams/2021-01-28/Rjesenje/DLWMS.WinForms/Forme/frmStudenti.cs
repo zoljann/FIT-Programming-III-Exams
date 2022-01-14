@@ -55,6 +55,7 @@ namespace DLWMS.WinForms.Forme
             else
             {
                 lblBrojStudenata.Text = $"Trenutno nema studenata u listi!";
+                lblProsjecna.Text = $"Prosjecna ocjena: 0";
             }
                 return listaStudenata;
             
