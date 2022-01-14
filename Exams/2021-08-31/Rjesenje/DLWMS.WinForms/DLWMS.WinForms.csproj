@@ -96,6 +96,26 @@
     <Compile Include="Helpers\DLWMSdb.cs" />
     <Compile Include="Entiteti\StudentiPredmeti.cs" />
     <Compile Include="Entiteti\Uloge.cs" />
+    <Compile Include="IB200002\frmNoviScanIspitaIB200002.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IB200002\frmNoviScanIspitaIB200002.Designer.cs">
+      <DependentUpon>frmNoviScanIspitaIB200002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IB200002\frmPretragaIB200002.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IB200002\frmPretragaIB200002.Designer.cs">
+      <DependentUpon>frmPretragaIB200002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IB200002\frmScanIspitaIB200002.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IB200002\frmScanIspitaIB200002.Designer.cs">
+      <DependentUpon>frmScanIspitaIB200002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IB200002\KorisniciIspitiScan.cs" />
+    <Compile Include="IB200002\StudentiStatistika.cs" />
     <Compile Include="Izvjestaji\dsDLWMS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -146,9 +166,17 @@
     <Compile Include="Entiteti\Spol.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="frmGlavna.resx">
       <DependentUpon>frmGlavna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IB200002\frmNoviScanIspitaIB200002.resx">
+      <DependentUpon>frmNoviScanIspitaIB200002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IB200002\frmPretragaIB200002.resx">
+      <DependentUpon>frmPretragaIB200002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IB200002\frmScanIspitaIB200002.resx">
+      <DependentUpon>frmScanIspitaIB200002.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Izvjestaji\frmIzvjestaji.resx">
       <DependentUpon>frmIzvjestaji.cs</DependentUpon>
@@ -211,21 +239,8 @@
     <None Include="Resources\logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="Resources\SQLite.Interop.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x64\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
