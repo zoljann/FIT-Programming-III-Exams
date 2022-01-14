@@ -47,6 +47,7 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.lblBrojStudenata = new System.Windows.Forms.Label();
             this.lblProsjecnaOcjena = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudenti)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -219,11 +220,22 @@
             this.lblProsjecnaOcjena.Size = new System.Drawing.Size(0, 13);
             this.lblProsjecnaOcjena.TabIndex = 9;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(604, 322);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "COVID";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmStudenti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(706, 354);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblProsjecnaOcjena);
             this.Controls.Add(this.lblBrojStudenata);
             this.Controls.Add(this.comboBox2);
@@ -265,5 +277,6 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label lblProsjecnaOcjena;
         private System.Windows.Forms.Label lblBrojStudenata;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -121,8 +121,8 @@ namespace DLWMS.WinForms.Forme
                 Polozeni = dgvPolozeniPredmeti.DataSource as List<StudentiPredmeti>
             };
 
-            frmIzvjestaji frmIzvjestaji = new frmIzvjestaji();
-            frmIzvjestaji.ShowDialog();
+           // frmIzvjestaji frmIzvjestaji = new frmIzvjestaji();
+           // frmIzvjestaji.ShowDialog();
         }
     }
 

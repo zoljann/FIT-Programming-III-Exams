@@ -1,5 +1,6 @@
 ﻿using DLWMS.WinForms.Entiteti;
 using DLWMS.WinForms.Helpers;
+using DLWMS.WinForms.IB200002;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -23,6 +24,7 @@ namespace DLWMS.WinForms.Forme
         private void frmStudenti_Load(object sender, EventArgs e)
         {
             UcitajPodatkeOStudentima();
+            errorProvider1.Clear();
         }
 
         private void btnNoviStudent_Click(object sender, EventArgs e)
@@ -62,50 +64,52 @@ namespace DLWMS.WinForms.Forme
 
         private List<Student> Filtriraj()
         {
-            var datumOd = dateTimePicker1.Value.Date;
-            var datumDo = dateTimePicker2.Value.Date;
+            List<Student> student = null;
+            if (Validiraj())
+            {
+                var datumOd = dateTimePicker1.Value.Date;
+                var datumDo = dateTimePicker2.Value.Date;
 
-            var listaPoDatumu = _baza.StudentiPredmeti.Where(d => d.Datum >= datumOd && d.Datum <= datumDo).ToList();
-            var listaPoDatumuOcjeni = new List<StudentiPredmeti>();
+                var listaPoDatumu = _baza.StudentiPredmeti.Where(d => d.Datum >= datumOd && d.Datum <= datumDo).ToList();
+                var listaPoDatumuOcjeni = new List<StudentiPredmeti>();
                 switch (znak)
-            {
-                case ">":
-                    listaPoDatumuOcjeni = listaPoDatumu.Where(o => o.Ocjena > filterOcjena).ToList();
-                    break;
-                case ">=":
-                    listaPoDatumuOcjeni = listaPoDatumu.Where(o => o.Ocjena >= filterOcjena).ToList();
-                    break;
-                case "<":
-                    listaPoDatumuOcjeni = listaPoDatumu.Where(o => o.Ocjena < filterOcjena).ToList();
-                    break;
-                case "<=":
-                    listaPoDatumuOcjeni = listaPoDatumu.Where(o => o.Ocjena <= filterOcjena).ToList();
-                    break;
-                case "=":
-                    listaPoDatumuOcjeni = listaPoDatumu.Where(o => o.Ocjena == filterOcjena).ToList();
-                    break;
-            }
+                {
+                    case ">":
+                        listaPoDatumuOcjeni = listaPoDatumu.Where(o => o.Ocjena > filterOcjena).ToList();
+                        break;
+                    case ">=":
+                        listaPoDatumuOcjeni = listaPoDatumu.Where(o => o.Ocjena >= filterOcjena).ToList();
+                        break;
+                    case "<":
+                        listaPoDatumuOcjeni = listaPoDatumu.Where(o => o.Ocjena < filterOcjena).ToList();
+                        break;
+                    case "<=":
+                        listaPoDatumuOcjeni = listaPoDatumu.Where(o => o.Ocjena <= filterOcjena).ToList();
+                        break;
+                    case "=":
+                        listaPoDatumuOcjeni = listaPoDatumu.Where(o => o.Ocjena == filterOcjena).ToList();
+                        break;
+                }
 
-            var student = listaPoDatumuOcjeni.Select(s => s.Student).Distinct().ToList();
-            if (listaPoDatumuOcjeni.Count != 0)
-            {
-                lblBrojStudenata.Text = $"Broj studenata: {student.Count()}";
-                lblProsjecnaOcjena.Text = $"Prosjecna ocjena: {listaPoDatumuOcjeni.Average(o => o.Ocjena)}";
-            }
-            else
-            {
-                lblBrojStudenata.Text = "Trenutno nema pohranjenih studenata";
-                lblProsjecnaOcjena.Text = $"Prosjek je trenutno 0";
-            }
+                student = listaPoDatumuOcjeni.Select(s => s.Student).Distinct().ToList();
+                if (listaPoDatumuOcjeni.Count != 0)
+                {
+                    lblBrojStudenata.Text = $"Broj studenata: {student.Count()}";
+                    lblProsjecnaOcjena.Text = $"Prosjecna ocjena: {listaPoDatumuOcjeni.Average(o => o.Ocjena)}";
+                }
+                else
+                {
+                    lblBrojStudenata.Text = "Trenutno nema pohranjenih studenata";
+                    lblProsjecnaOcjena.Text = $"Prosjek je trenutno 0";
+                }
 
-            return student;
+            }
+                return student;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (Validiraj())
-                znak = comboBox1.SelectedItem.ToString();
-
+            znak = comboBox1.SelectedItem.ToString();
             UcitajPodatkeOStudentima();
         }
 
@@ -117,10 +121,14 @@ namespace DLWMS.WinForms.Forme
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(Validiraj())
             filterOcjena = int.Parse(comboBox2.SelectedItem.ToString());
-
             UcitajPodatkeOStudentima();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var frmCovid = new frmCovidTestIB200002();
+            frmCovid.Show();
         }
     }
 }
