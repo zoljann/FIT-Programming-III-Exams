@@ -49,6 +49,7 @@ namespace DLWMS.WinForms.IB200002
                 _baza.KorisniciIspitiScan.Add(noviScan);
                 _baza.SaveChanges();
                 DialogResult = DialogResult.OK;
+                Close();
             }
         }
 
