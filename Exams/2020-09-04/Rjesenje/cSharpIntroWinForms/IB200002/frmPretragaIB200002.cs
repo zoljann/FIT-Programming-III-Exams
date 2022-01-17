@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -66,6 +67,21 @@ namespace cSharpIntroWinForms.IB200002
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (textBox2.Text != "")
+            {
+                Thread thread = new Thread(Sumiraj);
+                var unos = long.Parse(textBox2.Text);
+                thread.Start(unos);
+            }
+        }
+        private void Sumiraj(object obj)
+        {
+            var unos = long.Parse(obj.ToString());
+            long suma = 0;
+            for (int i = 0; i < unos; i++)
+                suma += i;
+            Action action = () => lblSuma.Text = suma.ToString();
+            BeginInvoke(action);
         }
     }
 }
