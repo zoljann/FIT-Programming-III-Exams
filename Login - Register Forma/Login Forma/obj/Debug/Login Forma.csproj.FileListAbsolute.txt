@@ -27,7 +27,6 @@ C:\Users\zolja\Desktop\FIT-Programming-III-Exams\LoginRegisterModify(I parc)\Log
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\Login Forma.exe.config
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\Login Forma.exe
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\Login Forma.pdb
-C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login Forma.csprojAssemblyReference.cache
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login_Forma.Aplikacija.resources
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login_Forma.Properties.Resources.resources
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login Forma.csproj.GenerateResource.cache
@@ -48,3 +47,62 @@ C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Fo
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login_Forma.frmBazaPodataka.resources
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login_Forma.frmPolozeniPredmeti.resources
 C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login_Forma.frmRegistracija.resources
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\EnvDTE.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\stdole.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\Microsoft.MSXML.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\zolja\Desktop\FIT-Programming-III-Exams\Login - Register Forma\Login Forma\obj\Debug\Login Forma.csproj.AssemblyReference.cache
