@@ -1,4 +1,5 @@
 ﻿
+using DLWMS.WinForms.IB200002;
 using System;
 using System.Collections.Generic;
 
@@ -17,6 +18,7 @@ namespace DLWMS.WinForms
         public string Email { get; set; }
         public string Lozinka { get; set; }
         public bool Aktivan { get; set; }
+        public virtual List<StudentiSlike> SlikeStudenta { get; set; } = new List<StudentiSlike>();
         public override string ToString()
         {
             return $"{Ime} {Prezime}";

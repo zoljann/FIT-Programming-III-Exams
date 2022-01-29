@@ -31,7 +31,7 @@ namespace DLWMS.WinForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new Reports.frmIzvjestaj().Show();
+           // new Reports.frmIzvjestaj().Show();
         }
     }
 }
