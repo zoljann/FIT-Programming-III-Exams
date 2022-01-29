@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -71,6 +72,32 @@ namespace DLWMS.WinForms.IB200002
         {
             var frmIzvj = new frmIzvjestaj(listaStudenata);
             frmIzvj.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var frmT = new frmTeorijaIB200002();
+            frmT.Show();
+        }
+
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            double suma = 0;
+            await Task.Run(() =>
+            {
+                if (textBox2.Text != "" && textBox3.Text != "")
+                {
+                    int Od = int.Parse(textBox2.Text);
+                    int Do = int.Parse(textBox3.Text);
+                    for (int i = Od; i < Do; i++)
+                    {
+                        Thread.Sleep(50);
+                        suma += i;
+                    }
+                }
+            });
+            Action akcija = () => textBox4.Text = suma.ToString();
+            BeginInvoke(akcija);
         }
     }
 }

@@ -114,6 +114,12 @@
     <Compile Include="IB200002\frmStudentSlikeIB200002.Designer.cs">
       <DependentUpon>frmStudentSlikeIB200002.cs</DependentUpon>
     </Compile>
+    <Compile Include="IB200002\frmTeorijaIB200002.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IB200002\frmTeorijaIB200002.Designer.cs">
+      <DependentUpon>frmTeorijaIB200002.cs</DependentUpon>
+    </Compile>
     <Compile Include="IB200002\Predmeti.cs" />
     <Compile Include="IB200002\StudentiPredmeti.cs" />
     <Compile Include="IB200002\StudentiSlike.cs" />
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IB200002\frmStudentSlikeIB200002.resx">
       <DependentUpon>frmStudentSlikeIB200002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IB200002\frmTeorijaIB200002.resx">
+      <DependentUpon>frmTeorijaIB200002.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
